@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import ReactForm from "./components/reactForms";
+import WorkingWithRefs from "./components/workingWithRefs";
 
-ReactDOM.render(<ReactForm />, document.getElementById('root'));
+ReactDOM.render(<WorkingWithRefs />, document.getElementById('root'));
 
