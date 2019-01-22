@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import LayoutPage from "./components/reactRouter";
+import StateContainer from "./components/liftingStateUp";
 
-ReactDOM.render(<LayoutPage />, document.getElementById('root'));
+ReactDOM.render(<StateContainer />, document.getElementById('root'));
 
