@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import GrandParents from "./components/reactContext";
+import LayoutPage from "./components/reactRouter";
 
-ReactDOM.render(<GrandParents />, document.getElementById('root'));
+ReactDOM.render(<LayoutPage />, document.getElementById('root'));
 
