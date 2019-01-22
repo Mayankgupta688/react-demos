@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import EmployeeList from "./components/iterateEmployees";
+import GrandParents from "./components/reactContext";
 
-ReactDOM.render(<EmployeeList />, document.getElementById('root'));
+ReactDOM.render(<GrandParents />, document.getElementById('root'));
 
