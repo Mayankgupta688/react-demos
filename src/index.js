@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import WorkingWithRefs from "./components/workingWithRefs";
+import WorkingWithProps from "./components/workingWithProps";
 
-ReactDOM.render(<WorkingWithRefs />, document.getElementById('root'));
+ReactDOM.render(<WorkingWithProps />, document.getElementById('root'));
 
