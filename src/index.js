@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import StateContainer from "./components/liftingStateUp";
+import ReactForm from "./components/reactForms";
 
-ReactDOM.render(<StateContainer />, document.getElementById('root'));
+ReactDOM.render(<ReactForm />, document.getElementById('root'));
 
