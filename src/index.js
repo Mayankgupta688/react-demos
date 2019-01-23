@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import EmployeeDetails from "./components/routingConcepts";
+import DangerouslySetInnerHTML from "./components/dangerouslySetInnerHTML";
 
-ReactDOM.render(<EmployeeDetails />, document.getElementById('root'));
+ReactDOM.render(<DangerouslySetInnerHTML />, document.getElementById('root'));
 
