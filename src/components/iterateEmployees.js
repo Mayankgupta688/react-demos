@@ -2,8 +2,8 @@ import React from 'react';
 import JSON from "./employees.json"
 
 export default class EmployeeList extends React.Component {
-    constructor(props) {
-        super(props);
+    constructor() {
+        super();
         this.state = {
             employeeList: JSON.employeeList
         }
@@ -12,7 +12,7 @@ export default class EmployeeList extends React.Component {
     renderEmployeeList() {
         return this.state.employeeList.map((employee) => {
             return (
-                <div key={employee.name} style={{borderBottom: '1px solid red', padding: '10px'}}>
+                <div style={{borderBottom: '1px solid red', padding: '10px'}}>
                     <div>Employee Name: {employee.name}</div>
                     <div>Employee Age: {employee.age}</div>
                     <div>Employee Designation: {employee.designation}</div>
@@ -21,10 +21,26 @@ export default class EmployeeList extends React.Component {
         });
     }
 
+    renderEmployeeListOther() {
+
+        var filteredArray = []
+        this.state.employeeList.forEach(employee => {
+            filteredArray.push(
+                <div style={{borderBottom: '1px solid red', padding: '10px'}}>
+                    <div>Employee Name: {employee.name}</div>
+                    <div>Employee Age: {employee.age}</div>
+                    <div>Employee Designation: {employee.designation}</div>
+                </div>
+            )
+        });
+
+        return filteredArray;
+    }
+
     render() {
         return (
             <div>
-                {this.renderEmployeeList()}
+                {this.renderEmployeeListOther()}
             </div>
         )
     }

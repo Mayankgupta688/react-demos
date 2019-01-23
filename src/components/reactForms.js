@@ -40,7 +40,14 @@ export default class ReactForm extends React.Component {
     render() {
         return (
             <div>
-                <input onChange={this.handleInputChanges} class="userName" type="text" placeholder="Enter Name" value={this.state.userName} /><br/>
+                
+                <input onChange={this.handleInputChanges} 
+                       class="userName" 
+                       type="text" 
+                       placeholder="Enter Name" 
+                       value={this.state.userName} />
+
+
                 <input onChange={this.handleInputChanges} class="userAge" type="text" placeholder="Enter Age" value={this.state.userAge} /><br/>
                 <input onChange={this.handleInputChanges} class="userDesignation" type="text" placeholder="Enter Designation" value={this.state.designation} /><br/>
                 <input onChange={this.handleInputChanges} class="userGender" type="text" placeholder="Enter Gender" value={this.state.gender} /><br/>

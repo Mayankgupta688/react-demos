@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Route, Link, Router } from "react-router-dom";
+import { BrowserRouter, Route, Link } from "react-router-dom";
 
 export default class LayoutPage extends React.Component {
     render() {
