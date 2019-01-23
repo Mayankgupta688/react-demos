@@ -27,7 +27,7 @@ export default class HandlingEvents extends React.Component {
     }
 
     incrementCounterValueWithEvents = (event) => {
-        var myEvent = event;
+        console.dir(event);
         this.setState({
             counter: this.state.counter + 1
         })

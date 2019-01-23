@@ -4,10 +4,6 @@ export default class ReactForm extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            userName: 'initialName',
-            userAge: 0,
-            designation: "Learner",
-            gender: 'M'
         }
 
         this.handleInputChanges = this.handleInputChanges.bind(this);
@@ -37,20 +33,26 @@ export default class ReactForm extends React.Component {
         
     }
 
+    showUpdatedValue = () => {
+        console.dir(this.state);
+    }
+
     render() {
         return (
             <div>
                 
                 <input onChange={this.handleInputChanges} 
-                       class="userName" 
+                       className="userName" 
                        type="text" 
                        placeholder="Enter Name" 
                        value={this.state.userName} />
 
 
-                <input onChange={this.handleInputChanges} class="userAge" type="text" placeholder="Enter Age" value={this.state.userAge} /><br/>
-                <input onChange={this.handleInputChanges} class="userDesignation" type="text" placeholder="Enter Designation" value={this.state.designation} /><br/>
-                <input onChange={this.handleInputChanges} class="userGender" type="text" placeholder="Enter Gender" value={this.state.gender} /><br/>
+                <input onChange={this.handleInputChanges} className="userAge" type="text" placeholder="Enter Age" value={this.state.userAge} /><br/>
+                <input onChange={this.handleInputChanges} className="userDesignation" type="text" placeholder="Enter Designation" value={this.state.designation} /><br/>
+                <input onChange={this.handleInputChanges} className="userGender" type="text" placeholder="Enter Gender" value={this.state.gender} /><br/>
+                <button onClick={this.showUpdatedValue}>Click</button>
+            
             </div>
         )
     }

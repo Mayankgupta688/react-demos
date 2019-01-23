@@ -26,7 +26,7 @@ export default class StateContainer extends React.Component {
                 <b>User Age: {this.state.age}</b><br/><br/>
 
                 <div>
-                    <ChildElement callback={this.updateUserName} />
+                    <ChildElement name={this.state.userName} callbackFunction={this.updateUserName} />
                 </div>
             </div>
 
@@ -38,7 +38,8 @@ class ChildElement extends React.Component {
     render() {
         return (
             <div>
-                <input type="button" value="Click To Change Parent" onClick={(event) => this.props.callback("Anshul", event)} />
+                <b>Child Name is: {this.props.name}</b><br/>
+                <input type="button" value="Click To Change Parent" onClick={(event) => this.props.callbackFunction("Anshul", event)} />
             </div>
         )
     }

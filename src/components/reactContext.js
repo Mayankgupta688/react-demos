@@ -24,10 +24,15 @@ export default class GrandParents extends React.Component {
 
 function Parents(props) {
     return (
-        <div>
-            <b>Inherited Parent Property With "props": </b><label>{props.surName}</label><br/><br/><br/>
-            <Children />
-        </div>
+        <FamilyConsumer>
+            {(context) => (
+                <div>
+                <b>Inherited Parent Property With "props": </b><label>{props.surName}</label><br/><br/><br/>
+                <Children />
+            </div>
+            )}
+            
+        </FamilyConsumer>
     )
 }
 
@@ -35,7 +40,7 @@ class Children extends React.Component {
     render() {
         return (
             <FamilyConsumer>
-                {context => (
+                {(context) => (
                     <div>
                         <b>Inherited Child Properties without "props": </b><label>{context.surName}</label>
                     </div>
