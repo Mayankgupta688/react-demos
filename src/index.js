@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {ChildComponent, ParentComponent} from "./components/componentInheritance";
+import ReactValidation from "./components/reactValidation";
 
-ReactDOM.render(<ChildComponent />, document.getElementById('root'));
+ReactDOM.render(<ReactValidation />, document.getElementById('root'));
 

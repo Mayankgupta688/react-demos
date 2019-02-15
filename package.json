@@ -23,5 +23,9 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "react-validation": "^3.0.7",
+    "validator": "^10.11.0"
+  }
 }
