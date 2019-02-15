@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import DangerouslySetInnerHTML from "./components/dangerouslySetInnerHTML";
+import {ChildComponent, ParentComponent} from "./components/componentInheritance";
 
-ReactDOM.render(<DangerouslySetInnerHTML />, document.getElementById('root'));
+ReactDOM.render(<ChildComponent />, document.getElementById('root'));
 
