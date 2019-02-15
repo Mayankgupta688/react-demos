@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import ReactValidation from "./components/reactValidation";
+import ShouldComponentUpdate from "./components/shouldComponentUpdate";
 
-ReactDOM.render(<ReactValidation />, document.getElementById('root'));
+ReactDOM.render(<ShouldComponentUpdate />, document.getElementById('root'));
 
