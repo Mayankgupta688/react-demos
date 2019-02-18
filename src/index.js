@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import ShouldComponentUpdate from "./components/shouldComponentUpdate";
+import ChildUpdatesAlways from "./components/childUpdatesAlways";
 
-ReactDOM.render(<ShouldComponentUpdate />, document.getElementById('root'));
+ReactDOM.render(<ChildUpdatesAlways />, document.getElementById('root'));
 
