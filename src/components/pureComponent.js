@@ -13,6 +13,8 @@ export default class PureComponent extends React.Component {
 
     updateState = () => {
 
+        // Even when we are updating the state, since its a complex object therefore, the changes are not propogated to the Chils Elements.
+
         setTimeout(() => {
             this.setState({
                 user: {
