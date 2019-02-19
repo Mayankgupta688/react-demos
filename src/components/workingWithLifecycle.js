@@ -34,7 +34,7 @@ export default class LifeCycleEvent extends React.Component {
 
 
     shouldComponentUpdate(nextProps, nextState) {
-        alert("Hello World")
+        return true;
     }
 
     componentDidUpdate() {

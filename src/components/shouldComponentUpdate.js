@@ -23,16 +23,20 @@ export default class ShouldComponentUpdate extends React.Component {
         console.log("componentDidMount")
     }
 
+    componentWillUpdate() {
+        console.log("componentWillUpdate")
+    }
+
     componentDidUpdate() {
         console.log("componentDidUpdate")
     }
 
     shouldComponentUpdate(nextProps, nextState) {
         console.dir("shouldComponentUpdate");
-        return true;
+        return false;
     }
 
-    consoleMessage() {
+    consoleMessage = () => {
         console.log("Function Called");
         this.forceUpdate();
     }
