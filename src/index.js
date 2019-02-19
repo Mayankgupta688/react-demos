@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import WorkingWithFragments from "./components/workingWithFragments";
+import ComponentWillReceiveProps from "./components/componentWillReceiveProps";
 
-ReactDOM.render(<WorkingWithFragments />, document.getElementById('root'));
+ReactDOM.render(<ComponentWillReceiveProps />, document.getElementById('root'));
 
