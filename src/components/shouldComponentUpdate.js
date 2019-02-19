@@ -1,27 +1,49 @@
 import React from "react";
 
 export default class ShouldComponentUpdate extends React.Component {
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
         this.state = {
-            name: "Mayank"
+            name: this.props.name
         }
     }
 
+    componentWillMount() {
+        this.setState({
+            name: "Meha"
+        });
+        console.log("componentWillMount")
+    }
+
     componentDidMount() {
-        setTimeout(() => {
-            this.setState({
-                name: "Anshul"
-            })
-        }, 5000)
+        this.setState({
+            name: "Anshul"
+        });
+
+        console.log("componentDidMount")
+    }
+
+    componentDidUpdate() {
+        console.log("componentDidUpdate")
     }
 
     shouldComponentUpdate(nextProps, nextState) {
-        console.dir("Accessing New State of Component: " + nextState.name);
+        console.dir("shouldComponentUpdate");
         return true;
     }
 
+    consoleMessage() {
+        console.log("Function Called");
+        this.forceUpdate();
+    }
+
     render() {
-        return <div>{this.state.name}</div>
+        console.dir("render");
+        return (
+            <div id="mainData">
+                <p>{this.state.name}</p>
+                <input type="button" value="Click" onClick={this.consoleMessage} />
+            </div>
+        )
     }
 }

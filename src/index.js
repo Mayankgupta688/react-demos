@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import ChildUpdatesAlways from "./components/childUpdatesAlways";
+import WorkingWithFragments from "./components/workingWithFragments";
 
-ReactDOM.render(<ChildUpdatesAlways />, document.getElementById('root'));
+ReactDOM.render(<WorkingWithFragments />, document.getElementById('root'));
 

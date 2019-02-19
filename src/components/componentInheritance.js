@@ -23,7 +23,6 @@ export default class ParentComponent extends React.Component {
 }
 
 export class ChildComponent extends ParentComponent {
-
     constructor() {
         super();
 
