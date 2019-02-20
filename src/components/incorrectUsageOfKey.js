@@ -26,9 +26,9 @@ export default class IncorrectUsageOfKey extends React.Component {
         return (
             <>
                 { 
-                    this.state.userNameList.map((employee) => {
-                        return (<div style={{color: 'red', padding: '10px', margin: '10px', borderBottom: '1px solid black'}}>
-                            <b style={{paddingRight: '5px'}}>User Name: {employee}</b>
+                    this.state.userNameList.map((employee, index) => {
+                        return (<div style={{color: 'red', padding: '10px', margin: '10px', borderBottom: '1px solid black'}} key={employee}>
+                            <b style={{paddingRight: '5px'}}>User Name: {employee}, User Index: {index}</b>
                             <input type="text" placeholder="Enter User Description" />
                         </div>)
                     })
