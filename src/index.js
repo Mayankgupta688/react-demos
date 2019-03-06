@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import IncorrectUsageOfKey from "./components/incorrectUsageOfKey";
+import {ErrorBoundaries, ShowData} from "./components/errorBoundaries";
 
-ReactDOM.render(<IncorrectUsageOfKey />, document.getElementById('root'));
+ReactDOM.render(<ErrorBoundaries><ShowData name="Mayank" /></ErrorBoundaries>, document.getElementById('root'));
 
