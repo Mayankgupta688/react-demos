@@ -1,5 +1,9 @@
 import React from "react";
 
+// foceUpdate updates the Component irrespective of whether the "shouldComponentUpdate" returns true or false
+
+// This method "forceUpdate" wont go to "shouldComponent Update"
+
 export default class ShouldComponentUpdate extends React.Component {
     constructor(props) {
         super(props);
@@ -16,10 +20,13 @@ export default class ShouldComponentUpdate extends React.Component {
     }
 
     componentDidMount() {
-        this.setState({
-            name: "Anshul"
-        });
 
+        setTimeout(() => {
+            this.setState({
+                name: "Anshul"
+            });
+        }, 5000);
+        
         console.log("componentDidMount")
     }
 

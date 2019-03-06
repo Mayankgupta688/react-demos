@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {ErrorBoundaries, ShowData} from "./components/errorBoundaries";
+import CallingLazyComponents from "./components/callingLazyComponents";
 
-ReactDOM.render(<ErrorBoundaries><ShowData name="Mayank" /></ErrorBoundaries>, document.getElementById('root'));
+ReactDOM.render(<CallingLazyComponents />, document.getElementById('root'));
 
