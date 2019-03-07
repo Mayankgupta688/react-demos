@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import CallingLazyComponents from "./components/callingLazyComponents";
+import TestingComponent from "./components/testingComponent";
 
-ReactDOM.render(<CallingLazyComponents />, document.getElementById('root'));
+ReactDOM.render(<TestingComponent />, document.getElementById('root'));
 

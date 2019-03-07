@@ -1,10 +1,11 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import TestingComponent from "../components/testingComponent";
 
+import { shallow } from 'enzyme';
+
 it("should Render Component", () => {
-    const divElement = document.createElement("div");
-    ReactDOM.render(<TestingComponent />, divElement);
+    const testingComponent = shallow(<TestingComponent />);
+    expect(testingComponent.find('UserName').length).toBe(1);
 })
 
 
