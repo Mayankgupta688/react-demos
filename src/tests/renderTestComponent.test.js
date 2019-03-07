@@ -6,3 +6,5 @@ it("should Render Component", () => {
     const divElement = document.createElement("div");
     ReactDOM.render(<TestingComponent />, divElement);
 })
+
+
