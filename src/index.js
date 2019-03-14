@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import TestingComponent from "./components/testingComponent";
+import UpdatingPropsReference from "./components/updatingPropsReference";
 
-ReactDOM.render(<TestingComponent />, document.getElementById('root'));
+ReactDOM.render(<UpdatingPropsReference />, document.getElementById('root'));
 
