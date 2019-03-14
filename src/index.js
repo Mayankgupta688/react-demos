@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import UpdatingPropsReference from "./components/updatingPropsReference";
+import UpdateStateIncorrectly from "./components/updateStateIncorrectly";
 
-ReactDOM.render(<UpdatingPropsReference />, document.getElementById('root'));
+ReactDOM.render(<UpdateStateIncorrectly />, document.getElementById('root'));
 
