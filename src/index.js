@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import IncorrectUsageOfKey from "./components/incorrectUsageOfKey";
+import PureComponent from "./components/pureComponent";
 
-ReactDOM.render(<IncorrectUsageOfKey />, document.getElementById('root'));
+ReactDOM.render(<PureComponent />, document.getElementById('root'));
 
