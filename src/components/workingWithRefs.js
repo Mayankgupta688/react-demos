@@ -11,8 +11,6 @@ export default class WorkingWithRefs extends React.Component {
     }
 
     changeUncontrollerElement() {
-
-        alert(this.refs.uncontrolledElements.value)
         this.refs.uncontrolledElements.value = "Mayank";
     }
 
