@@ -22,7 +22,7 @@ export default class PureComponent extends React.Component {
         setInterval(() => {
             this.setState({
                 user: {
-                    firstName: "aaa"
+                    firstName: "aaaaaa"
                 }
             })
         }, 1000)
