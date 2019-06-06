@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import ChildCallForceUpdateWithParentReturningFalseFromShouldComponentUpdate from "./components/shouldComponentUpdate/childCallForceUpdateWithParentReturningFalseFromShouldComponentUpdate";
+import ParentReturnFalse from "./components/shouldComponentUpdate/usingObjectsFromParent/parentReturnFalse";
 
 
-ReactDOM.render(<ChildCallForceUpdateWithParentReturningFalseFromShouldComponentUpdate />, document.getElementById('root'));
+ReactDOM.render(<ParentReturnFalse />, document.getElementById('root'));
 

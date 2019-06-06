@@ -7,9 +7,6 @@ import React from "react";
 // For the parent "forceUpdate" need to be called explicitely..
 
 class ChildComponent extends React.Component {
-    constructor(props) {
-        super(props); 
-    }
 
     updateTheChild = () => {
         this.props.userInfo.name = "Anshul";
