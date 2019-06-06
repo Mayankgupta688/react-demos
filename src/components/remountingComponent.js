@@ -8,7 +8,7 @@ import React from 'react';
 
 class RecreateClass extends React.Component {
     render() {
-        return <div>Hello All</div>
+        return <div>This is Apache nginx Testing..</div>
     }
 
     componentWillUnmount() {
@@ -18,7 +18,7 @@ class RecreateClass extends React.Component {
 
 class RecreateOtherClass extends React.Component {
     render() {
-        return <div>Hello All</div>
+        return <div>This is Apache nginx Testing..</div>
     }
 
     componentWillUnmount() {
@@ -56,6 +56,10 @@ export default class RemountingComponent extends React.Component {
             )
         }
         
+    }
+
+    componentWillUnmount() {
+        alert("Parent Component Is Unmounted")
     }
         
 }
