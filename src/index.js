@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import ParentReturnFalse from "./components/shouldComponentUpdate/usingObjectsFromParent/parentReturnFalse";
+import AsynchUpdates from "./components/updatesAreAsynchronous/asynchUpdates";
 
 
-ReactDOM.render(<ParentReturnFalse />, document.getElementById('root'));
+ReactDOM.render(<AsynchUpdates />, document.getElementById('root'));
 
