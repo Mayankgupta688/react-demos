@@ -18,3 +18,26 @@ export default function HigherComponentWithData() {
     }
 }
 
+ export function ShowName(props) {
+    return (
+        <>
+            <div>User Name: {props.userName}</div><hr></hr>
+        </>
+    )
+}
+
+export function ShowAge(props) {
+    return (
+        <>
+            <div>User Age: {props.userAge}</div><hr></hr>
+        </>
+    )
+}
+
+export function ShowDesignation(props) {
+    return (
+        <>
+            <div>User Designation: {props.userDesignation}</div><hr></hr>
+        </>
+    )
+}

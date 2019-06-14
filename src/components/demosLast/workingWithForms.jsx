@@ -3,13 +3,15 @@ import Input from 'react-validation/build/input';
 import Button from 'react-validation/build/button';
 import React, { Component } from 'react';
 
+// Validation Library: https://www.npmjs.com/package/react-validation
+
 export default class WorkingWithForms extends Component {
 
     required = (value) => {
         if (!value.toString().trim().length) {
           return <b style={{"marginLeft": "20px"}}>Please Enter Name</b>;
         }
-      };
+    };
       
     userName = (value) => {
         if(value === "Mayank Gupta") {
