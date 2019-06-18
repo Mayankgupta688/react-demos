@@ -1,10 +1,8 @@
-
-
 import React, { useState } from "react";
 
-export default function EmployeeDetails(props)  {
+export default function EmployeeDetails()  {
 
-    const [name] = useState(props.name);
+    const [name] = useState("Mayank");
     const [age, setAge] = useState(31);
     const [designation] = useState("Senior Developer");
     

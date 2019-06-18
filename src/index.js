@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import CallingLazyComponents from "./components/callingLazyComponents";
+import NestedRoutingComponent from "./components/detailedDiscussions/reactRouting/nestingRoutesParameter/nestedRoutingComponent";
 
-ReactDOM.render(<CallingLazyComponents />, document.getElementById('root'));
+ReactDOM.render(<NestedRoutingComponent />, document.getElementById('root'));
 
