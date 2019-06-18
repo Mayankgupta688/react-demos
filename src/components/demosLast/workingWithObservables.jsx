@@ -6,6 +6,11 @@ var randomNumberGenerator = Observable.create(function(observer) {
   setInterval(function() {
     
     var randomNumber = Math.floor(Math.random() * 100);
+
+    if(randomNumber > 80 ) {
+      observer.complete("Value not Expected...")
+    }
+
     observer.next(randomNumber);
     
   }, 1000);
@@ -21,7 +26,7 @@ export default class WorkingWithObservables extends React.Component {
     }
 
     componentDidMount() {
-        randomNumberGenerator.subscribe((value) => {
+        var abc = randomNumberGenerator.subscribe((value) => {
             this.setState({
                 inputData: value
             })

@@ -10,8 +10,14 @@ export default class CallingLazyComponents extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            name: "Dynamic Import"
+            name: "Dynamic Import Dummy"
         }
+    }
+
+    changeInput = (event) => {
+        this.setState({
+            name: event.target.value
+        })
     }
 
     render() {
@@ -30,7 +36,19 @@ export default class CallingLazyComponents extends React.Component {
                 console.dir("Component Loaded Dynamically")
             })
 
+            import("./callingUnmount").then((LazyComponent) => {
+                console.dir("Component Loaded Dynamically")
+            })
+
             return <div>This is the Guest User</div>
+        } else {
+            return (
+                <>
+                    <input value={this.state.name} onChange={this.changeInput} />
+                    <h1>{this.state.name}</h1>
+                </>
+            )
         }
+        
     }
 }

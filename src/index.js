@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import WorkingWithObservables from "./components/demosLast/workingWithObservables";
+import CallingLazyComponents from "./components/callingLazyComponents";
 
-ReactDOM.render(<WorkingWithObservables />, document.getElementById('root'));
+ReactDOM.render(<CallingLazyComponents />, document.getElementById('root'));
 

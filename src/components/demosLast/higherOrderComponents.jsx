@@ -18,6 +18,8 @@ export default function HigherComponentWithData() {
     }
 }
 
+var newComponent = HigherComponentWithData().getHigherOrderComponent(ShowName)
+
  export function ShowName(props) {
     return (
         <>
@@ -41,3 +43,5 @@ export function ShowDesignation(props) {
         </>
     )
 }
+
+
