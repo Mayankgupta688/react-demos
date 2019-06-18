@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import ExtractingParameters from "./components/detailedDiscussions/reactRouting/nestingRoutesParameter/extractingParameters";
+import NestedRoutingComponent from "./components/detailedDiscussions/reactRouting/nestingRoutesParameter/nestedRoutingComponent";
 
-ReactDOM.render(<ExtractingParameters />, document.getElementById('root'));
+ReactDOM.render(<NestedRoutingComponent />, document.getElementById('root'));
 

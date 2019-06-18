@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter, Route, Link, Switch } from "react-router-dom";
 
-export default class ExtractingParameters extends React.Component {
+export default class NestedRoutingComponent extends React.Component {
     render() {
         return (
             <BrowserRouter>
