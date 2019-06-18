@@ -15,11 +15,11 @@ export default class SimpleRouter extends React.Component {
                         </nav>
                     </header>
 
-                    <b style={{marginBottom: "10px;"}}>The Area below will be Updated</b><br/><br/>
+                    <b style={{marginBottom: "10px"}}>The Area below will be Updated</b><br/><br/>
 
-                    <Route exact path="/" component={HomeComponent}></Route>
-                    <Route exact path="/about" component={AboutComponent}></Route>
-                    <Route exact path="/help" component={HelpComponent}></Route>
+                    <Route path="/" component={HomeComponent}></Route>
+                    <Route path="/about" component={AboutComponent}></Route>
+                    <Route path="/help" component={HelpComponent}></Route>
 
                 </div>
             </BrowserRouter>

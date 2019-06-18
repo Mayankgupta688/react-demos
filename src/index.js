@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import UsingWithRouter from "./components/detailedDiscussions/reactRouting/usingWithRouter";
+import CreateCustomRoutes from "./components/detailedDiscussions/reactRouting/advancedRouting/createCustomRoutes";
 
-ReactDOM.render(<UsingWithRouter />, document.getElementById('root'));
+ReactDOM.render(<CreateCustomRoutes />, document.getElementById('root'));
 
