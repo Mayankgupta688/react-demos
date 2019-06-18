@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import WorkingWithObservables from "./components/demosLast/workingWithObservables";
+import UsingWithRouter from "./components/detailedDiscussions/reactRouting/usingWithRouter";
 
-ReactDOM.render(<WorkingWithObservables />, document.getElementById('root'));
+ReactDOM.render(<UsingWithRouter />, document.getElementById('root'));
 
