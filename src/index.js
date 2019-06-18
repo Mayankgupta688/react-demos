@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import CreateCustomRoutes from "./components/detailedDiscussions/reactRouting/advancedRouting/createCustomRoutes";
+import PrivateRoute from "./components/detailedDiscussions/reactRouting/advancedRouting/privateRoute";
 
-ReactDOM.render(<CreateCustomRoutes />, document.getElementById('root'));
+ReactDOM.render(<PrivateRoute />, document.getElementById('root'));
 

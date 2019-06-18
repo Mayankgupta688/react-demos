@@ -1,6 +1,8 @@
 import React from "react";
 import { Route, BrowserRouter, Link} from "react-router-dom";
 
+// The Route over here can intercept to get the "props" data for the request..
+
 
 export default class UsingRenderProps extends React.Component {
     render() {
@@ -14,7 +16,7 @@ export default class UsingRenderProps extends React.Component {
                 <div>
                     <Route exact path="/" component={HomeComponent} />
                     <Route exact path="/about" component={AboutComponent} />
-                    <Route exact path="/help" render={() => <HelpComponent name="Mayank" />} />
+                    <Route exact path="/help" render={(props) => <HelpComponent name="Mayank" />} />
                 </div>
             </div>
         </BrowserRouter>

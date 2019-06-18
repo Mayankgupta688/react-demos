@@ -1,7 +1,20 @@
 import React from "react";
 import { BrowserRouter, Route, Link } from "react-router-dom";
 
-export default class CreateCustomRoutes extends React.Component {
+export default class PrivateRoute extends React.Component {
+
+    constructor() {
+        super();
+        this.state = {
+            isLoggedIn: false
+        }
+    }
+
+    toggleLogIn = () => {
+        this.setState({
+            isLoggedIn: !this.state.isLoggedIn
+        })
+    }
     render() {
         return (
             <BrowserRouter>
@@ -16,21 +29,26 @@ export default class CreateCustomRoutes extends React.Component {
                     </header>
 
                     <b style={{marginBottom: "10px"}}>The Area below will be Updated</b><br/><br/>
-                    <CustomRouter exact path="/" component={HomeComponent}></CustomRouter>
-                    <CustomRouter exact path="/about" component={AboutComponent}></CustomRouter>
-                    <CustomRouter path="/help/:id" component={HelpComponent}></CustomRouter>
+                    <SecureRoute isLoggedIn={this.state.isLoggedIn} exact path="/" component={HomeComponent}></SecureRoute>
+                    <SecureRoute isLoggedIn={this.state.isLoggedIn} exact path="/about" component={AboutComponent}></SecureRoute>
+                    <SecureRoute isLoggedIn={this.state.isLoggedIn} path="/help/:id" component={HelpComponent}></SecureRoute><br></br>
+                    <input type="button" value={this.state.isLoggedIn? "Log Out": "Log In"} onClick={this.toggleLogIn} />
+                    
                 </div>
             </BrowserRouter>
         )
     }
 }
 
-class CustomRouter extends React.Component {
+class SecureRoute extends React.Component {
     render() {
         var {component: ComponentToRender, ...otherProps} = this.props;
         return (
             <Route {...otherProps} render={(props) => {
-                return <ComponentToRender {...props}></ComponentToRender>
+                if(this.props.isLoggedIn) {
+                    return <ComponentToRender {...props}></ComponentToRender>
+                }
+                return <PageNotFound></PageNotFound>
             }}></Route>
         )
     }
@@ -53,5 +71,12 @@ function HelpComponent(props) {
     console.dir(props)
     return (
         <div>This is the Help Component</div>
+    )
+}
+
+function PageNotFound(props) {
+    console.dir(props)
+    return (
+        <div>Please Login to Proceed...</div>
     )
 }
