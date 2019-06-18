@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import PrivateRoute from "./components/detailedDiscussions/reactRouting/advancedRouting/privateRoute";
+import ExtractingParameters from "./components/detailedDiscussions/reactRouting/nestingRoutesParameter/extractingParameters";
 
-ReactDOM.render(<PrivateRoute />, document.getElementById('root'));
+ReactDOM.render(<ExtractingParameters />, document.getElementById('root'));
 
