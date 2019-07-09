@@ -1,7 +1,5 @@
 import React, { lazy, Suspense } from "react";
 
-const LazyComponent = lazy(() => import("./lazyComponent"));
-
 // Since we have the Lazy Loading, components are loaded in different chunks, making the main chunk less heavy..
 
 // The following stuff can bring more performance in cases when there are multiple Comonents and when we are defining Routes..
@@ -22,6 +20,7 @@ export default class CallingLazyComponents extends React.Component {
 
     render() {
         if(this.state.name === "Lazy Load") {
+            const LazyComponent = lazy(() => import("./lazyComponent"));
             return (
                 <div>
                     <h1>This is the Base User: {this.state.name}</h1>
