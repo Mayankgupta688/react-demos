@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import NestedRoutingComponent from "./components/detailedDiscussions/reactRouting/nestingRoutesParameter/nestedRoutingComponent";
+import ComponentRecreation from "./components/componentRecreation";
 
-ReactDOM.render(<NestedRoutingComponent />, document.getElementById('root'));
+ReactDOM.render(<ComponentRecreation />, document.getElementById('root'));
 
