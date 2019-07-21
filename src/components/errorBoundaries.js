@@ -13,6 +13,9 @@ export class ErrorBoundaries extends React.Component {
     }
 
     static getDerivedStateFromError(error) {
+
+        // Get Derived State From Props Function captures the error and update the state accordingly..
+        
         console.dir("Get Derived State From Error");
         return {
             hasErrors: true

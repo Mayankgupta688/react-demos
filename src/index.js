@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import ComponentRecreation from "./components/componentRecreation";
+import ChildUpdatesAlways from "./components/childUpdatesAlways";
 
-ReactDOM.render(<ComponentRecreation />, document.getElementById('root'));
+ReactDOM.render(<ChildUpdatesAlways />, document.getElementById('root'));
 

@@ -1,7 +1,7 @@
 
 import React from "react";
 
-export default class ComponentRecreation extends React.Component {
+export default class NonMutableArrayUpdate extends React.Component {
     constructor() {
         super();
         this.state = {

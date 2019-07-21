@@ -1,5 +1,15 @@
 import React from "react";
 
+// One of the agenda for this topic could be that, we can show different ways to bind ecvents
+
+// 1. Bind Data in the Constructor
+
+// 2. Bind Data during Function call
+
+// 3. Use Arrow Functions..
+
+// There are advantages and disadvantages for each method, best is to do in the constructor;
+
 export default class HandlingEvents extends React.Component {
     constructor(props) {
         super(props);

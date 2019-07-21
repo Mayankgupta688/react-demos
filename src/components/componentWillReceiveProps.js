@@ -28,6 +28,8 @@ class ChildComponent extends React.Component {
         }
     }
 
+    // This is the Event where the component before re-rendering, can update state from new props values
+
     componentWillReceiveProps(props, state) {
         this.setState({
             name: props.name

@@ -8,7 +8,7 @@ export default class CallingLazyComponents extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            name: "Dynamic Import Dummy"
+            name: "Dynamic Import"
         }
     }
 
@@ -31,15 +31,19 @@ export default class CallingLazyComponents extends React.Component {
             )
         } else if(this.state.name === "Dynamic Import") {
 
+            // The problem with this code is that the render function will continue executing
+
+            // The Render function will not wait for component to be dynamically Loaded
+
             import("./lazyComponent").then((LazyComponent) => {
+                return <div><LazyComponent /></div>
+            })
+
+            import("./callingChildUnmount").then((LazyComponent) => {
                 console.dir("Component Loaded Dynamically")
             })
 
-            import("./callingUnmount").then((LazyComponent) => {
-                console.dir("Component Loaded Dynamically")
-            })
-
-            return <div>This is the Guest User</div>
+            return <div>This is the Dynamic Loading of Components</div>
         } else {
             return (
                 <>

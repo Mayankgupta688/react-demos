@@ -1,5 +1,11 @@
 import React from "react";
 
+// The Thing that need to be observed is that since "shouldComponentUpdate()" is returning false
+
+// The state variables of Parent Component will not update.. 
+
+// The Child Component will be rerendered, but the props value will still remain the same..
+
 
 class ChildComponent extends React.Component {
 
@@ -16,40 +22,16 @@ class ChildComponent extends React.Component {
         }, 1000);
     }
 
-    UNSAFE_componentWillMount() {
-        console.dir("Child Component Will Mounted");
-    }
-
     render() {
         console.dir("Child Component Rendered");
+        debugger;
         return <div>{this.props.name}</div>
-    }
-    componentDidMount() {
-        console.dir("Child Component Mounted");
-    }
-
-    UNSAFE_componentWillReceiveProps() {
-        console.dir("Child Component recieved The New Props")
     }
 
     shouldComponentUpdate(nextProps, nextState) {
         console.dir("Should Component Update Called for Child Element");
         return true;
     }
-
-    UNSAFE_componentWillUpdate() {
-        console.dir("Child Component Will Update");
-    }
-
-    getSnapshotBeforeUpdate() {
-        console.dir("Child Element Getting Snapshot")
-    }
-
-    componentDidUpdate() {
-        console.dir("Child Component Updated")
-    }
-
-    
 }
 
 export default class ChildUpdatesAlways extends React.Component {

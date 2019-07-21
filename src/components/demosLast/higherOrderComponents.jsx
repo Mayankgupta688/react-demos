@@ -18,7 +18,9 @@ export default function HigherComponentWithData() {
     }
 }
 
-var newComponent = HigherComponentWithData().getHigherOrderComponent(ShowName)
+// Here the inner element will be taking into the account data from the Parent Component...
+
+export var newComponent = HigherComponentWithData().getHigherOrderComponent(ShowName)
 
  export function ShowName(props) {
     return (
