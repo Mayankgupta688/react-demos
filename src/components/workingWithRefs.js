@@ -17,7 +17,7 @@ export default class WorkingWithRefs extends React.Component {
     render() {
         return (
             <div>
-                <input type="text" ref="uncontrolledElements" value={this.state.name} style={{marginRight: '5px'}} />
+                <input type="text" ref="uncontrolledElements" style={{marginRight: '5px'}} />
                 <input type="button" onClick={this.changeUncontrollerElement.bind(this)} value="Click to Update"/>
             </div>
         )
